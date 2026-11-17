@@ -55,11 +55,13 @@ footer{background:#08050d;border-top:1px solid #ffffff15;padding:35px 0}
 @media(max-width:650px){.nav{height:66px}.brand{font-size:.95rem;letter-spacing:1px}.navlinks{gap:6px}.navlinks a{font-size:.68rem}.nav .btn{display:inline-flex;padding:8px 9px;font-size:.68rem;white-space:nowrap}.hero{min-height:570px;padding:90px 0 70px}.orb{width:280px;height:280px}.section{padding:65px 0}.card{padding:21px}.grid{grid-template-columns:1fr}.info .card{min-height:0}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
 button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--cyan);outline-offset:4px}
+.skip-link{position:fixed;left:12px;top:-64px;z-index:30;padding:12px 16px;border-radius:10px;background:#fff;color:#090611;font-weight:800;box-shadow:0 8px 28px #0008;transition:top .2s}.skip-link:focus{top:12px}
 </style>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header><div class="wrap nav"><a class="brand" href="#">✦ NEXUS SMP</a><nav class="navlinks" aria-label="Main navigation"><a href="#ranks">Ranks</a><a href="#about">About</a><a href="#rules">Rules</a></nav><button class="btn" type="button" aria-haspopup="dialog" aria-controls="loginModal" aria-expanded="false" onclick="openModal()">Player Login</button></div></header>
-<main>
+<main id="main-content" tabindex="-1">
 <section class="hero"><div class="orb"></div><div class="heroContent wrap"><div class="eyebrow">YOUR WORLD • YOUR RULES</div><h1>NEXUS SMP</h1><p>Beyond ordinary survival. Build your legacy.</p><div class="actions"><a class="btn" href="#ranks">Explore Ranks</a><button class="btn outline" onclick="copyIP()">Copy Server IP</button></div><p id="ipStatus" class="note" role="status" aria-live="polite" aria-atomic="true">Server address will be announced soon.</p></div></section>
 <section class="section wrap" id="ranks"><h2>✦ RANK STORE</h2><p class="sub">Choose your path. Unlock your adventure.</p><div class="grid" id="rankGrid"></div></section>
 <section class="section wrap" id="about"><h2>THE NEXUS EXPERIENCE</h2><p class="sub">A place to explore, create, compete and make your mark.</p><div class="info"><div class="card"><div class="icon">🌌</div><h3>Explore</h3><p class="note">Discover a world full of possibilities.</p></div><div class="card"><div class="icon">🏰</div><h3>Create</h3><p class="note">Build your base and shape the world.</p></div><div class="card"><div class="icon">⚔️</div><h3>Compete</h3><p class="note">Rise through the ranks and earn your place.</p></div></div></section>
